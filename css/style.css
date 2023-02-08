@@ -1,0 +1,70 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+head{
+  display: flex;
+  justify-content: space-around;
+}
+body {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+nav img {
+  width: 61.09px;
+  height: 19px;
+}
+
+.hebergements {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.activites {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+form,
+button {
+  background: blue ;
+}
+
+i{
+  margin: 0;
+  background: #F2F2F2;
+}
+
+ main {
+  margin:10px;
+  background: #F2F2F2;
+  border-radius: 20px;
+ }
+
+
+footer {
+  display: flex;
+  place-content: space-around;
+  padding-right: 100px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
