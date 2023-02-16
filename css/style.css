@@ -6,6 +6,7 @@ head{
   display: flex;
   justify-content: space-around;
 }
+
 body {
   max-width: 1400px;
   margin: auto;
@@ -17,19 +18,7 @@ nav img {
   height: 19px;
 }
 
-.hebergements {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-}
 
-.activites {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-}
 
 form,
 button {
@@ -64,7 +53,4 @@ a {
   text-decoration: none;
 }
 
-figure {
-  margin: 0;
-}
 
