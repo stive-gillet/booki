@@ -2,49 +2,69 @@
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-head{
-  display: flex;
-  justify-content: space-around;
-}
-
 body {
   margin: auto;
   padding: 0 20px;
   max-width: 1400px;
 }
 
-nav {
+main,
+nav,
+footer,
+ul,
+.filtres {
   display: flex;
-  height: 19px;
 }
 
-
-
-form,
-button {
-  background: blue ;
-}
-
- main {
-  display: flex;
-  margin:auto;
-  background: #F2F2F2;
+main {
+  margin: auto;
   border-radius: 20px;
- }
+  background: #F2F2F2;
+}
 
-
-footer ,
-section{
-  display: flex;
-  align-items: stretch;
+nav {
+  justify-content: space-between;
+  align-items: center;
 }
 
 ul {
-  display: flex;
-  margin: auto;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
+footer ul{
+  flex-direction: column;
+}
 
+.filtres ul{
+  align-content: space-around;
+  gap: 20px;
+}
 
+nav li{
+  border-top: solid 2px transparent;
+  padding: 10px;
+}
+
+nav li:hover,
+nav li:focus {
+  border-top: blue;
+}
+
+a{
+  color:black;
+}
+
+nav a:hover,
+nav a:focus,
+footer a:hover,
+footer a:focus {
+  color: blue;
+}
+
+.filtres {
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: space-between;
+}
