@@ -105,7 +105,7 @@ footer a:focus {
 
 figure {
   margin: 0;
-  bacolor: white;
+  background: white;
 }
 
 .hebergements a > figure {
@@ -134,8 +134,9 @@ figure {
 
 .populaires a > figure {
   display: flex;
-  gap: 20px;
   height: 150px;
+  border: white 5px solid;
+  border-radius: 20px;
 }
 
 figcaption{
@@ -143,18 +144,18 @@ figcaption{
   padding: 5px;
   justify-content: space-between;
   flex-direction: column;
-  border-radius: 0 20px 20px 0;
 }
 
 img {
   max-width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .populaires img {
   width: 100px;
   height:150px;
+  border-radius: 20px 0 0 20px;
 
 }
 
@@ -169,6 +170,10 @@ img {
   padding: 20px;
   width: 70%;
   background: #F2F2F2;
+}
+
+.activites ul{
+  gap:20px;
 }
 
 .populaires {
