@@ -182,12 +182,6 @@ img {
   object-fit: cover;
 }
 
-img .logo{
-  max-width: 100px;
-}
-
-
-
 .populaires img {
   width: 100px;
   height:150px;
@@ -197,6 +191,10 @@ img .logo{
 .filtres {
   align-items: center;
   align-content: space-between;
+}
+
+.Booki{
+  max-width: 80px;
 }
 
 .hebergements {
