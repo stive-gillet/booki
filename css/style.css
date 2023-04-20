@@ -270,9 +270,15 @@ footer li {
   .hebergements{
     width: 100%;
   }
-
+  .populaires{
+    width:100%;
+  }
   .populaires ul{
     flex-direction: row;
   }
+
+}
+
+@media (max-width:1024px){
   
 }
