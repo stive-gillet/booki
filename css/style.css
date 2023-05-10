@@ -2,6 +2,10 @@
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: auto;
   padding: 0 20px;
@@ -62,9 +66,14 @@ footer ul{
 }
 
 .filtres li {
-  border: solid #D9D9D9;
+  border: solid #F2F2F2;
   border-radius: 60px;
-  padding: 5px;
+  padding: 10px;
+}
+
+.filtres li:hover,
+.filtres li:focus {
+  background-color: #deebff;
 }
 
 .filtres ul{
@@ -152,7 +161,7 @@ figure {
 
 .fa-info{
   border-radius: 50%;
-  border: 1px #D9D9D9 solid;
+  border: 1px #F2F2F2 solid;
   padding: 5px 2px;
 }
 
@@ -172,8 +181,8 @@ button{
 }
 
 input{
-  border-top: 1px solid #D9D9D9;
-  border-bottom: 1px solid #D9D9D9;
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
   border-right: none;
   border-left: none;
   padding: 10px;
@@ -236,6 +245,18 @@ img {
 width: calc((100% - 60px) / 4);
 }
 
+.hebergements a > figure,
+.populaires a > figure ,
+.activites figure{
+  box-shadow: 5px 5px 5px #F2F2F2;
+}
+
+.activites figure{
+  display: flex;
+  flex-direction: column;
+  place-content: baseline;
+}
+
 .activites img{
   width: 100%;
   height:  380px;
@@ -243,14 +264,14 @@ width: calc((100% - 60px) / 4);
 }
 
 .activites figcaption{
+  height: 40px;
   border-radius: 0 0 10px 10px ;
-  box-shadow: 5px 5px 5px #D9D9D9;
   font-weight: bold;
 }
 
 footer {
   place-content: space-between;
-  background-color: #D9D9D9;
+  background-color: #F2F2F2;
   padding: 0 150px 30px 20px ;
 }
 
@@ -262,6 +283,7 @@ footer li {
   margin-bottom: 5px;
 }
 
+
 @media (max-width: 991px) {
   main {
     flex-flow: column;
@@ -270,12 +292,15 @@ footer li {
   .hebergements{
     width: 100%;
   }
+
   .populaires{
     width:100%;
   }
+
   .populaires ul{
     flex-direction: row;
   }
+
 
 }
 
